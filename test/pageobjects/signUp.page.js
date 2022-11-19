@@ -34,6 +34,8 @@ class SignUpPage {
     
     }
 
+    
+
    async signUp (fName, lName, email, password) {
 
       await this.createAccountLink.click()
@@ -46,7 +48,8 @@ class SignUpPage {
 
    }
 
-
 }
+
+
 
 module.exports = new SignUpPage;

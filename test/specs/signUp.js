@@ -2,7 +2,7 @@ const SignUpPage = require('../pageobjects/signUp.page')
 const { faker } = require('@faker-js/faker');
 
 
-describe.only ('Create an account', () => {
+describe.skip ('Create an account', () => {
     it('Should sign up succesfully', async () => {
        await browser.url('https://magento.softwaretestingboard.com/')
        const email = await faker.internet.email(undefined,undefined,'gmail.com')
