@@ -12,3 +12,14 @@ describe.skip ('Create an account', () => {
     }) 
 
 }); 
+
+describe.only ('Invalid password Sign up', () => {
+    it('should login with invalid credentials', async () => {
+       await browser.url('https://magento.softwaretestingboard.com/')
+       const email = await faker.internet.email(undefined,undefined,'gmail.com')
+       await SignUpPage.signUp('','Berry',email,'Lmnop123@')
+       await expect(SignUpPage.incorrectFirstName).toHaveTextContaining('This is a required field')
+       
+    }) 
+
+}); 

@@ -34,7 +34,10 @@ class SignUpPage {
     
     }
 
+    get incorrectFirstName () {
+        return $('#firstname-error')
     
+    }
 
    async signUp (fName, lName, email, password) {
 
