@@ -18,7 +18,28 @@ exports.config = {
     //
     // If you are calling `wdio` from an NPM script (see https://docs.npmjs.com/cli/run-script),
     // then the current working directory is where your `package.json` resides, so `wdio`
-    // will be called from there.
+    // will be called from there. 
+
+    //reporters: [['allure', {
+    //outputDir: 'allure-results',
+    //disableWebdriverStepsReporting: true,
+    //disableWebdriverScreenshotsReporting: true,
+    //}]],
+
+    
+   // ... user: process.env.CBT_USERNAME,
+     //key: process.env.CBT_AUTHKEY,
+     //services: [
+        //['crossbrowsertesting', {
+            //cbtTunnel: true,
+            //cbtTunnelOpts: {
+                // any additional options from cbt_tunnels
+           // },
+       // }]
+   // ],
+    // ...
+    // ...
+    
     //
     specs: [
         './test/specs/**/*.js'

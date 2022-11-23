@@ -1,7 +1,7 @@
 const SignUpPage = require('../pageobjects/signUp.page')
 const { faker } = require('@faker-js/faker');
 
-
+beforeEach()
 describe.skip ('Create an account', () => {
     it('Should sign up succesfully', async () => {
        await browser.url('https://magento.softwaretestingboard.com/')
@@ -12,7 +12,7 @@ describe.skip ('Create an account', () => {
     }) 
 
 }); 
-
+afterEach() 
 describe.only ('Invalid password Sign up', () => {
     it('should login with invalid credentials', async () => {
        await browser.url('https://magento.softwaretestingboard.com/')
